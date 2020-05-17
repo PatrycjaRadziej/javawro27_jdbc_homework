@@ -96,7 +96,7 @@ public class Main {
     }
 
     private static void updatePet(PetDao dao, Scanner scanner) {
-        System.out.println("Podaj parametry: Iimie wiek imie_wlaściciela waga rasowy");
+        System.out.println("Podaj parametry: imie wiek imie_wlaściciela waga rasowy");
         String linia = scanner.nextLine();
         String[] slowa = linia.split(" ");
 
@@ -109,6 +109,7 @@ public class Main {
                 .ownerName(slowa[2])
                 .weight(Double.parseDouble(slowa[3]))
                 .pureRace(Boolean.parseBoolean(slowa[4]))
+                .id(id)
                 .build();
 
         dao.updatePet(pet);
