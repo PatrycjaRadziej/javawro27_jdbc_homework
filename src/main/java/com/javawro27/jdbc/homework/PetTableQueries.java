@@ -12,9 +12,9 @@ public interface PetTableQueries {
 
     String INSERT_PET_QUERY = "insert into `pets` (`name`, `age`, `owner_name`, `weight`, `pure_race`) values ( ?, ?, ?, ?, ?);";
 
-    String SELECT_ALL_PETS_QUERY = "select * from 'pets';";
+    String SELECT_ALL_PETS_QUERY = "select * from pets;";
 
-    String UPDATE_PET_QUERY = "update 'pets' set 'name' =?, 'age'=?, 'owner_name' =?, 'weight'=?, 'pure_race'=? where 'id' =?;";
+    String UPDATE_PET_QUERY = "update pets set 'name' =?, 'age'=?, 'owner_name' =?, 'weight'=?, 'pure_race'=? where 'id' =?;";
 
-    String DELETE_PET_QUERY = "delete from 'pets' where 'id' = ?;";
+    String DELETE_PET_QUERY = "delete from pets where 'id' = ?;";
 }
